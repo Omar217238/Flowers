@@ -1,0 +1,157 @@
+:root {
+    --primary-color: #ff56cc;
+    --secondary-color: #60214d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+nav .logo {
+    color: var(--primary-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Home page background */
+main {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), url('./flowers.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main h2 {
+    font-size: 3.5rem;
+    color: var(--secondary-color);
+}
+
+/* About + Contact pages */
+.page-main {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), url('./flowers.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card {
+    width: 70%;
+    max-width: 850px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 0;
+}
+
+.card-subtitle {
+    text-align: center;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.badge {
+    display: inline-block;
+    background-color: rgba(255, 86, 204, 0.15);
+    color: var(--secondary-color);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.field {
+    margin-bottom: 14px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+    .card {
+        width: 95%;
+        padding: 22px;
+    }
+}

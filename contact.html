@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Flowers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="flower-logo.png">
+</head>
+
+<body>
+    <nav>
+        <h1 class="logo">Flower</h1>
+
+        <ul class="nav-pages">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+        <button class="btn">Login</button>
+    </nav>
+
+    <main class="page-main">
+        <section class="card">
+            <h2 class="card-title">Contact Us</h2>
+            <p class="card-subtitle">Have a question or a special request? Send us a message and we’ll get back to you.</p>
+
+            <form class="form" action="#" method="post">
+                <div class="field">
+                    <label for="fullName">Full Name</label>
+                    <input class="input" id="fullName" name="fullName" type="text" placeholder="Enter your name" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input class="input" id="email" name="email" type="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea class="textarea" id="message" name="message" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn" type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
